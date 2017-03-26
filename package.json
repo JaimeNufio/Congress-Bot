@@ -1,0 +1,16 @@
+{
+  "name": "congress",
+  "version": "1.0.0",
+  "description": "Congress Info Retriever",
+  "main": "congress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "congress",
+    "bot",
+    "app"
+  ],
+  "author": "Jaime Nufio",
+  "license": "ISC"
+}
