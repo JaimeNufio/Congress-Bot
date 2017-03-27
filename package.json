@@ -12,5 +12,8 @@
     "app"
   ],
   "author": "Jaime Nufio",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "congressional-districts": "^1.0.4"
+  }
 }

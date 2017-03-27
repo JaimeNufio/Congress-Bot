@@ -1,20 +1,19 @@
-var url = "i.propublica.org/congress/v1/115/senate/members.json"  
-var apiKey = "C4pXHb5hHa3m1POhoJPa19s1GNIJcOXoo7vRcmd4"
+var config = require('./config');
 
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var Dist = require('congressional-districts');
+var Congress = require('propublica-congress-node');
+var client = new Congress(config.congressAPIKey);
 
+console.log(Dist.getDistricts(08861));
 
-var website = "https://www.reddit.com/r/njtech.json";
-var xhr = new XMLHttpRequest();
-
-xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        //var myArr = JSON.parse(this.responseText);
-        	console.log(JSON);
-	}
-};
-
-xhr.open('GET', website, true);
-xhr.send();
-
-
+/*
+client.membersCurrentByStateOrDistrict({
+	version: 'v1',
+    chamber: 'senate',
+	congressNumber: '115',
+	state: 'nj',
+	//district: '12',
+  }).then(function(res) {
+    console.log(res);
+  });
+*/
